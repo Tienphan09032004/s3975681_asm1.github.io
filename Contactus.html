@@ -1,0 +1,128 @@
+<!--
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Phan Nguyen Phuoc Tien 
+  ID: s3975681
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="icon" href="img/bk_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="head_nav">
+            <a class="logo_nav" href="index.html">
+                <img class="logo" src="img/bk_logo.png" alt="Bookstore logo">
+            </a>
+            <label class="mobile-nav-icon">☰</label>
+            <ul class="nav_prop">
+                <li><a href="index.html">
+                        <img src="img/home_icon.png" alt="home icon">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li><a href="Fiction.html">
+                        <img src="img/book.png" alt="book icon">
+                        <span>
+                            Fiction
+                        </span>
+                    </a>
+                </li>
+                <li><a href="Non-Fiction.html">
+                        <img src="img/book.png" alt="book icon">
+                        <span>
+                            Non-Fiction
+                        </span>
+                    </a>
+                </li>
+                <li><a href="Children.html">
+                        <img src="img/book.png" alt="book icon">
+                        <span>
+                            Children Book
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="c_heading "> Contact us</h1>
+        <form class="contactForm">
+            <div>
+                <label for="contactPurpose">Contact Purpose:</label>
+                <select id="contactPurpose" name="contactPurpose">
+                    <option value="sellBooks">I want to sell books</option>
+                    <option value="buyBooks">I want to buy books</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="con_pref">
+                <span>Contact Preference:</span>
+                <label for="byEmail">By email</label>
+                <input type="checkbox" id="byEmail" name="contactPreference" value="email">
+
+                <label for="byPhone">By phone</label>
+                <input type="checkbox" id="byPhone" name="contactPreference" value="phone">
+            </div>
+
+            <div class="newsletter">
+                <span>Receive Weekly Newsletter:</span>
+                <label for="newsletterYes">Yes</label>
+                <input type="radio" id="newsletterYes" name="newsletter" value="yes" checked>
+
+                <label for="newsletterNo">No</label>
+                <input type="radio" id="newsletterNo" name="newsletter" value="no">
+            </div>
+            <div>
+                <label for="extraNotes">Extra Notes:</label>
+                <textarea id="extraNotes" name="extraNotes" rows="4"></textarea>
+            </div>
+            <div class="buttons_container">
+                <button type="reset">
+                    <img src="img/reset_icon.png" class="c_icon">
+                    <span>RESET</span>
+                </button>
+                <button type="submit">
+                    <img src="img/submit_icon.png" class="c_icon">
+                    <span>SUBMIT</span>
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
